@@ -9,5 +9,68 @@
 </head>
 <body>
     <h1>Dae Felas</h1>
+
+    <p id="teste">Isso é o Id de Teste</p>
+    <p> Paragrafo limpo, sem id</p>
+    <p class="p-yellow">Outro Paragrafo, mas em class</p>
+
+        <div class="p-yellow">Texto dentro de uma div</div>
+
+        <hr>
+    <button id="botao" style="padding:50px;">Clique Aqui</button>
+
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    
+    <script>
+        
+        //JavaScript Puro                                                                                               
+        document.getElementById("teste").innerHTML = "teste";
+
+       //JQuery
+       $("#teste").html("teste");
+
+       //adicionar CSS pelo JQuery
+       // $('p').addClass('nome-da-classe');
+
+       $(document).ready(function(){
+            $('div.p-yellow').html('inserido com JQuery');      //Você pode chamar algo antes do ./# seja Div ou P
+       });
+
+       //SEMPRE QUE FOR ID, CHAMAR ELE POR "#"
+       //Nessa função, eu to chamando uma função
+       //que faz um CSS dentro do HTML, usando JQuery
+       
+    //   $(document).ready(function(){
+    //        $('#teste').html('inserido com JQuery');
+    //   });
+
+       //Está acontecendo que quando eu uso o código
+       //da linha 30 e 31, eu escolho qual função eu 
+       //quero alterar, por exemplo, se dentro do
+       // $('x') eu colocar 'p', eu vou escolher
+       //alterar TODOS os <p> dentro do código.
+
+    //   $(document).ready(function(){
+    //        $('p').html('inserido com JQuery');
+    //   });
+
+        //agora, se eu quiser chamar um ID específico
+        //eu devo usar sempre o "#"
+
+    //   $(document).ready(function(){
+    //        $('.p-yellow').html('inserido com JQuery');
+    //   });
+
+    //Para chamar CLASSES, se usa "."
+
+    $(document).ready(function(){
+        $("#botao").click(function(){
+            alert('Clicou no Botão!');
+        });
+    });
+
+    </script>
 </body>
 </html>
