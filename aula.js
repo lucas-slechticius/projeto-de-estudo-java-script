@@ -41,11 +41,3 @@ console.log(corSite);
 
 resetaCor("vermelho");
 console.log(corSite);
-
-//VOU USAR UM JQUERY DE TESTE
-
-$(document).ready(function(){
-    $("#campotexto").focus(function(){
-        $(this).css("background-color", "yellow");
-    });
-});
