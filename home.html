@@ -16,9 +16,19 @@
 
         <div class="p-yellow">Texto dentro de uma div</div>
 
-        <hr>
-    <button id="botao" style="padding:50px;">Clique Aqui</button>
+   <hr>
+    <button id="botao" style="padding:50px;">Alerta</button>
 
+    <hr>
+    <button id="botao2" style="padding:50px;">Paragrafos</button>
+
+    <hr>
+    <button id="botao3" style="padding:50px;">Teste de Mouse</button>
+
+    <hr>
+    <button id="botao4" style="padding:50px;">Hover</button>
+
+    <input id="campotexto" type="text" placeholder="Digite Algo" style="padding: 50px;">
 
 
     <script src="js/jquery-3.6.0.js"></script>
@@ -69,6 +79,36 @@
         $("#botao").click(function(){
             alert('Clicou no Botão!');
         });
+    });
+
+    $(document).ready(function(){
+        $("#botao2").click(function(){
+            $('p').hide();
+            $('div').hide();
+            $('hr').hide();
+        });
+    });
+
+    $(document).ready(function(){
+        $('#teste').click(function(){
+            $(this).html('mudei quando fui clicado');
+        });
+    });
+
+    $(document).ready(function(){
+        $('#botao3').mouseenter(function(){ //mouseleave
+            alert('ativou o mouse sobre'); //mousedown
+        });                                //mouseup
+    });
+
+    $(document).ready(function(){
+        $('#botao4').hover(function(){
+            $(this).text('Entrou Mouse');
+        },
+            function(){
+                $(this).text('Saiu o Mouse');
+            }
+        );
     });
 
     </script>
