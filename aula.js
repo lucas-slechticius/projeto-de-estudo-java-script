@@ -1,6 +1,6 @@
+
 let nome = 'cleber';  //let é váriavel meu chess
 let idade = 19;
-let ta = '10';
 let tamanhoDoPe = 44;
 let sobrenome = 'jovem';
 
@@ -8,11 +8,10 @@ let sobrenome = 'jovem';
 // mas colocar funções dentro da mesma
 
 let pessoa = {
-    nome: 'cleber',
+    nome: 'lucas',
     idade: 19,
-    ta: '10',
     tamanhoDoPe: 44,
-    sobrenome: 'jovem'
+    sobrenome: 'slechticius'
 };
 
 console.log(pessoa);
@@ -41,3 +40,5 @@ console.log(corSite);
 
 resetaCor("vermelho");
 console.log(corSite);
+
+
